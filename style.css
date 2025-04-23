@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 157, 28);
+}
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border: solid 1px rgb(0, 0, 0);
+    margin-top: 200px;
+    background-color: #3c76ce;
+    font-family: "Orbitron", sans-serif;
+
+}
+
+.display {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 400px;
+    height: 100px;
+    text-align: right;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+button {
+    width: 96px;
+    font-size: x-large;
+    outline: none;
+    border-radius: 5px;
+    font-family: "Orbitron", sans-serif;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0px 25px 0 #cdcdcd;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    gap: 2px;
+}
+
+.operator, #equalsBtn {
+    color: whitesmoke;
+    background-color: #ee9726;
+}
+
+.operator:active, #equalsBtn:active {
+    color: hsl(0, 0%, 46%);
+    background-color: hsl(26, 100%, 99%);
+}
+
+.number, .decimal-separator {
+    color: whitesmoke;
+    background-color: #093781;
+}
+
+.number:active, .decimal-separator:active {
+    background-color: hsl(217, 10%, 75%);
+}
+
+.extra-buttons {
+    background-color: #f2f2f2;
+}
+
+.extra-buttons:active {
+    background-color: hsl(0, 0%, 45%);
+}
+
